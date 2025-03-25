@@ -48,6 +48,7 @@ const CV: React.FC = () => {
           <a href="#info" className={`text-[${textGray}] hover:text-[${pastelBlue}] hover:border-b-2 hover:border-[${pastelBlue}] pb-1 transition-all`}>Thông tin</a>
           <a href="#experience" className={`text-[${textGray}] hover:text-[${pastelBlue}] hover:border-b-2 hover:border-[${pastelBlue}] pb-1 transition-all`}>Kinh nghiệm</a>
           <a href="#skills" className={`text-[${textGray}] hover:text-[${pastelBlue}] hover:border-b-2 hover:border-[${pastelBlue}] pb-1 transition-all`}>Kỹ năng</a>
+          <a href="#education" className={`text-[${textGray}] hover:text-[${pastelBlue}] hover:border-b-2 hover:border-[${pastelBlue}] pb-1 transition-all`}>Chứng chỉ</a>
         </div>
       </div>
 
@@ -59,7 +60,7 @@ const CV: React.FC = () => {
           {/* Left Column */}
           <div>
             {/* Mục tiêu nghề nghiệp */}
-            <section className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
+            <section id="objective" className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center mb-4">
                 <Target className={`w-5 h-5 text-[${pastelBlue}] mr-2`} />
                 <h2 className={`text-xl font-semibold text-[${textGray}]`}>Mục tiêu nghề nghiệp</h2>
@@ -70,7 +71,7 @@ const CV: React.FC = () => {
             </section>
 
             {/* Kinh nghiệm làm việc */}
-            <section className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
+            <section id="experience" className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center mb-4">
                 <Briefcase className={`w-5 h-5 text-[${pastelBlue}] mr-2`} />
                 <h2 className={`text-xl font-semibold text-[${textGray}]`}>Kinh nghiệm làm việc</h2>
@@ -79,7 +80,7 @@ const CV: React.FC = () => {
                 <div className={`relative border-l-2 border-[${pastelLight}] pl-6`}>
                   <div className={`absolute w-3 h-3 bg-[${pastelBlue}] rounded-full -left-[7px] top-1`}></div>
                   <h3 className={`font-medium text-[${textGray}]`}>Chuyên viên Trang điểm</h3>
-                  <p className={`text-[${pastelBlue}] text-sm mb-2`}>Ngọc Anh Wedding |2024</p>
+                  <p className={`text-[${pastelBlue}] text-sm mb-2`}>Ngọc Anh Wedding | 2024</p>
                   <ul className={`list-disc list-inside space-y-1 text-[${textGray}] text-sm`}>
                     <li>Thực hiện trang điểm chuyên nghiệp cho cô dâu và khách hàng sự kiện</li>
                     <li>Thiết kế concept trang điểm phù hợp với xu hướng và yêu cầu cá nhân</li>
@@ -90,7 +91,7 @@ const CV: React.FC = () => {
                 <div className={`relative border-l-2 border-[${pastelLight}] pl-6`}>
                   <div className={`absolute w-3 h-3 bg-[${pastelBlue}] rounded-full -left-[7px] top-1`}></div>
                   <h3 className={`font-medium text-[${textGray}]`}>Nhân viên Tư vấn Bán hàng</h3>
-                  <p className={`text-[${pastelBlue}] text-sm mb-2`}>Cửa hàng thời trang | 06/2022 - 12/2023</p>
+                  <p className={`text-[${pastelBlue}] text-sm mb-2`}>Cửa hàng Thời trang | 06/2022 - 12/2023</p>
                   <ul className={`list-disc list-inside space-y-1 text-[${textGray}] text-sm`}>
                     <li>Tư vấn sản phẩm làm đẹp dựa trên nhu cầu và sở thích của khách hàng</li>
                     <li>Quản lý tồn kho và lập báo cáo doanh thu hàng tháng</li>
@@ -104,7 +105,7 @@ const CV: React.FC = () => {
           {/* Right Column */}
           <div>
             {/* Thông tin cá nhân */}
-            <section className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
+            <section id="info" className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center mb-4">
                 <User className={`w-5 h-5 text-[${pastelBlue}] mr-2`} />
                 <h2 className={`text-xl font-semibold text-[${textGray}]`}>Thông tin cá nhân</h2>
@@ -116,7 +117,7 @@ const CV: React.FC = () => {
                 </div>
                 <div className={`flex items-center text-[${textGray}]`}>
                   <Phone className={`w-4 h-4 text-[${pastelBlue}] mr-2`} />
-                  <a href="tel:+84367613517" className={`text-sm hover:text-[${pastelBlue}] transition-colors`}>0987 654 321</a>
+                  <a href="tel:+84367613517" className={`text-sm hover:text-[${pastelBlue}] transition-colors`}>0367 613 517</a>
                 </div>
                 <div className={`flex items-center text-[${textGray}]`}>
                   <Mail className={`w-4 h-4 text-[${pastelBlue}] mr-2`} />
@@ -138,7 +139,7 @@ const CV: React.FC = () => {
             </section>
 
             {/* Kỹ năng chuyên môn */}
-            <section className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
+            <section id="skills" className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center mb-4">
                 <Star className={`w-5 h-5 text-[${pastelBlue}] mr-2`} />
                 <h2 className={`text-xl font-semibold text-[${textGray}]`}>Kỹ năng chuyên môn</h2>
@@ -162,7 +163,7 @@ const CV: React.FC = () => {
             </section>
 
             {/* Học vấn & Chứng chỉ */}
-            <section className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
+            <section id="education" className="bg-white rounded-xl p-6 mb-6 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center mb-4">
                 <GraduationCap className={`w-5 h-5 text-[${pastelBlue}] mr-2`} />
                 <h2 className={`text-xl font-semibold text-[${textGray}]`}>Học vấn & Chứng chỉ</h2>
